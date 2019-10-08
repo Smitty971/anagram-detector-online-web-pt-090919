@@ -2,11 +2,10 @@ class Anagram
   attr_accessor :word
   
   def initialize (word)
-    @word = word 
+    @name = word 
   end 
   
   def match (array)
-    array.selct { |x| x << x.split ("").sort == @name.split("")} 
-    grams
+    array.selct { |x| x << x.split ("").sort == @name.split("").sort} 
   end 
 end
