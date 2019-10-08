@@ -6,7 +6,7 @@ class Anagram
   end 
   
   def match (array)
-    array.selct { |x|grams << piece if piece.split.sort == @word.sort} 
+    array.selct { |x| x << x.split ("").sort == @name.split("")} 
     grams
   end 
 end
