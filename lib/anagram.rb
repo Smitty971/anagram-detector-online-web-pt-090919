@@ -5,9 +5,8 @@ class Anagram
     @word = word 
   end 
   
-  def match (phrase)
-    grams = []
-    phrase.each { |phrase|grams << piece if piece.split.sort == @word.sort} 
+  def match (array)
+    array.selct { |x|grams << piece if piece.split.sort == @word.sort} 
     grams
   end 
 end
